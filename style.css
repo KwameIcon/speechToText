@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f4f4f4f4;
+    overflow-x: hidden;
+}
+
+.mainContainer{
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    margin: auto;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.voiceImage{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+img{
+    position: absolute;
+    width: 350px;
+    top: -10px;
+    left: 32%;
+    display: none;
+}
+
+.actions{
+    margin: 30px 0px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    width: 180px;
+    padding: 10px;
+    height: 50px;
+    border: 1px solid #ccc;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+    user-select: none;
+}
+.btn.startbtn{
+    background-color: rgb(3, 143, 143);
+}
+.btn.stopbtn{
+    background-color: rgb(141, 3, 31);
+}
+
+.setOpacity{
+    opacity: 0.2;
+}
+
+#outputField{
+    border: 1px solid #ccc;
+    min-height: 150px;
+    min-width: 80%;
+    padding: 10px;
+    
+}
